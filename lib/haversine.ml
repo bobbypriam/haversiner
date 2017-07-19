@@ -37,15 +37,15 @@ let longitude_as_radians (Longitude l) =
 let radian_coordinate_of_degree_coordinate (lat, long) =
   (latitude_as_radians lat, longitude_as_radians long)
 
-let degree_coordinate_of_floats ~lat ~long =
-  (Latitude (Degree lat), Longitude (Degree long))
-
 let value_of_latitude = function
   | Latitude (Degree x) -> x
   | Latitude (Radian x) -> x
 let value_of_longitude = function
   | Longitude (Degree x) -> x
   | Longitude (Radian x) -> x
+
+let coordinate_of_floats ~lat ~long =
+  (Latitude (Degree lat), Longitude (Degree long))
 
 let calculate_distance a b =
   let lat_a = a |> radian_coordinate_of_degree_coordinate |> fst |> value_of_latitude in
