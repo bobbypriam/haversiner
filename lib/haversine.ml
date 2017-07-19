@@ -9,7 +9,7 @@ type coordinate = latitude * longitude
 let pi = 4. *. atan 1.
 let radians_of_degrees = ( *. ) (pi /. 180.)
 let haversine theta = 0.5 *. (1. -. cos theta)
-let earth_radius = 6371.                     (* in meters *)
+let earth_radius = 6371. (* in kilometers *)
 
 let subtract_angle a b =
   match a, b with
