@@ -1,6 +1,6 @@
 opam-version: "2.0"
 name: "haversiner"
-version: "1.0.0"
+version: "0.1.0"
 maintainer: "Bobby Priambodo <bobby.priambodo@gmail.com>"
 authors: ["Bobby Priambodo <bobby.priambodo@gmail.com>"]
 homepage: ""
