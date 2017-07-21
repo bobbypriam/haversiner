@@ -3,7 +3,7 @@
 
 (executable (
   (name test)
-  (libraries (lib))
+  (libraries (lib ounit))
 ))
 
 (alias (
