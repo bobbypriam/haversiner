@@ -1,4 +1,4 @@
-open OUnit
+open OUnit2
 open Lib.Haversine
 
 let epsilon = 0.01 (* We tolerate difference of +- 10 meters *)
@@ -8,7 +8,7 @@ let close_enough a b =
 
 let test_fixture = "Haversine" >:::
 [
-  "calculate_distance" >:: (fun () ->
+  "calculate_distance" >:: (fun _ ->
     (* Distance from BNA to LAX should roughly be 2886.45 km *)
     let bna = coordinate_of_floats ~lat:36.12 ~long:(-86.67) in
     let lax = coordinate_of_floats ~lat:33.94 ~long:(-118.4) in
@@ -27,4 +27,4 @@ let test_fixture = "Haversine" >:::
   )
 ]
 
-let _ = run_test_tt test_fixture
+let _ = run_test_tt_main test_fixture
