@@ -1,4 +1,4 @@
-open OUnit2
+open OUnit
 open Lib.Haversine
 
 let epsilon = 0.01 (* We tolerate difference of +- 10 meters *)

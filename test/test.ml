@@ -1,6 +1,6 @@
-open OUnit2
+open OUnit
 
-let tests = test_list [
+let tests = TestList [
   Haversine_test.suite
 ]
 
