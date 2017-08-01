@@ -3,4 +3,4 @@
 
 (library (
   (name lib)
-  (libraries (opium.unix))))
+  (libraries (opium))))
