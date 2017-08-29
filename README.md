@@ -19,3 +19,10 @@ $ curl -XPOST http://localhost:3000 -d @test/payload.json
 ```
 
 See [test/payload.json](test/payload.json) for example payload.
+
+## Building and running with Docker
+
+```
+$ docker build -t haversiner .
+$ docker run -p 3000:3000 -d --name haversiner haversiner
+```

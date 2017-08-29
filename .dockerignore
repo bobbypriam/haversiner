@@ -1,0 +1,7 @@
+_build*
+.vscode*
+.merlin
+README.md
+haversiner.install
+Dockerfile
+.dockerignore
