@@ -1,7 +1,5 @@
-open OUnit
-
-let tests = TestList [
-  Haversine_test.suite
+let tests = [
+  "haversine", Haversine_test.test_set
 ]
 
-let _ = run_test_tt_main tests
+let _ = Alcotest.run "Haversiner" tests
