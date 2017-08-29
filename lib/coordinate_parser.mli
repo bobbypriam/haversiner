@@ -1,2 +1,2 @@
-(* Parse coordinates from json *)
+(** Parse coordinates from json *)
 val parse : Ezjsonm.value -> Haversine.coordinate * Haversine.coordinate
