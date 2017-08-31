@@ -2,6 +2,6 @@
 (jbuild_version 1)
 
 (executable (
-  (name haversiner)
+  (name main)
   (public_name haversiner)
-  (libraries (lib))))
+  (libraries (haversiner))))

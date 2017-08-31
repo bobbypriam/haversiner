@@ -1,4 +1,4 @@
-open Lib.Haversine
+open Haversine
 
 let epsilon = 0.01 (* We tolerate difference of +- 10 meters *)
 

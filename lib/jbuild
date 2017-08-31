@@ -2,5 +2,7 @@
 (jbuild_version 1)
 
 (library (
-  (name lib)
+  (name haversiner)
+  (public_name haversiner)
+  (wrapped false)
   (libraries (opium))))

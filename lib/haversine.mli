@@ -1,3 +1,6 @@
+(** Module exposing functions for calculating the great
+    circle distance of two coordinates. *)
+
 (** Coordinate type. Use coordinate_of_floats to construct. *)
 type coordinate
 

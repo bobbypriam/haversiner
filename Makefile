@@ -1,6 +1,9 @@
 build:
 	jbuilder build @install
 
+doc:
+	jbuilder build @doc
+
 run: build
 	jbuilder exec haversiner
 
