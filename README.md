@@ -7,7 +7,8 @@ A simple OCaml app for calculating great-circle distance between two coordinates
 Clone this repo, then:
 
 ```
-$ opam install jbuilder opium ounit
+$ opam pin add -yn haversiner .
+$ opam install --deps-only haversiner
 $ make run
 ```
 
@@ -19,6 +20,13 @@ $ curl -XPOST http://localhost:3000 -d @test/payload.json
 ```
 
 See [test/payload.json](test/payload.json) for example payload.
+
+### Testing
+
+```
+$ opam install alcotest
+$ make test
+```
 
 ## Building and running with Docker
 
