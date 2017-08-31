@@ -3,9 +3,9 @@ name: "haversiner"
 version: "0.1.0"
 maintainer: "Bobby Priambodo <bobby.priambodo@gmail.com>"
 authors: ["Bobby Priambodo <bobby.priambodo@gmail.com>"]
-homepage: ""
-bug-reports: ""
-dev-repo: ""
+homepage: "https://github.com/bobbypriambodo/haversiner"
+bug-reports: "https://github.com/bobbypriambodo/haversiner/issues"
+dev-repo: "https://github.com/bobbypriambodo/haversiner"
 license: ["MIT"]
 tags: []
 build: [["jbuilder" "build" "-p" name "-j" jobs]]
