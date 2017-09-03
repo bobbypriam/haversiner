@@ -3,5 +3,6 @@ _build*
 .merlin
 README.md
 haversiner.install
+*.swp
 Dockerfile
 .dockerignore
