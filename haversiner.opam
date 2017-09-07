@@ -5,13 +5,12 @@ maintainer: "Bobby Priambodo <bobby.priambodo@gmail.com>"
 authors: ["Bobby Priambodo <bobby.priambodo@gmail.com>"]
 homepage: "https://github.com/bobbypriambodo/haversiner"
 bug-reports: "https://github.com/bobbypriambodo/haversiner/issues"
-dev-repo: "https://github.com/bobbypriambodo/haversiner"
+dev-repo: "git+https://github.com/bobbypriambodo/haversiner"
 license: ["MIT"]
-tags: []
 build: [["jbuilder" "build" "-p" name "-j" jobs]]
-build-test: [["jbuilder" "runtest" "-p" name "-j" jobs]]
 depends: [
   "jbuilder" {build}
   "opium"
   "alcotest" {test}
 ]
+run-test: ["jbuilder" "runtest" "-p" name "-j" jobs]
