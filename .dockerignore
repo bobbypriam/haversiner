@@ -4,5 +4,6 @@ _build*
 README.md
 haversiner.install
 *.swp
+_opam
 Dockerfile
 .dockerignore
